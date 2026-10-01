@@ -1,180 +1,309 @@
 <!DOCTYPE html>
 <html lang="en">
-    <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Smart Library</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Library</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="#home" aria-label="Smart Library home">
+          <span class="logo-mark">SL</span>
+          <h1>Smart Library</h1>
+        </a>
 
-    </head>
-    <body>
-        <header>
-            <div class="logo">
-                <h1>Smart Library</h1>
-                <p>school library management system designed to make book management, borrowing, returning, and availability tracking easier and more efficient.</p>
-                 </div>
-                <nav>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                         <li><a href="#problem">Problem</a></li> 
-                         <li><a href="#system">SmartLibrary</a></li>
-                          <li><a href="#feature">Feature</a></li>
-                           <li><a href="#team">Team</a></li>
-                            <li><a href="#contact-info">Contact</a></li>
-                    </ul>
-                </nav>
-         </header>
+        <nav class="main-nav" aria-label="Main navigation">
+          <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Problem">Problem</a></li>
+            <li><a href="#System">SmartLibrary</a></li>
+            <li><a href="#Feature">Feature</a></li>
+            <li><a href="#Team">Team</a></li>
+            <li><a href="#Contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-          <!-- ================= HOME SECTION ================= -->
-
-         <main>
-            <seletion id="home">
-                <h2>Welcome to SmartLibrary</h2>
-                <p>
-                    SmartLibrary is a proposed school library management system
-                designed to make book management, borrowing, returning,
-                and availability tracking easier and more efficient.
-                </p>
-                <a href="#system">Explore SmartLibrary</a>
-            </seletion>
-
-              <!-- ================= PROBLEM SECTION ================= -->
-
-              <section  id="Problem">
-                <h2>The Problem</h2>
-                  <p>
-                The school library currently uses manual records to manage
-                books. This can make it difficult to know which books are
-                available, who has borrowed a book, and when it should be
-                returned.
+    <main>
+      <section class="hero" id="home">
+        <div class="container hero-content">
+          <div class="hero-copy">
+            <p class="eyebrow">School library management system</p>
+            <h2>Modern library operations for smarter learning.</h2>
+            <p>
+              SmartLibrary is a proposed school library system designed to make
+              book management, borrowing, returning, and availability tracking
+              easier and more efficient.
             </p>
 
-            <h3>Who is affected?</h3>
+            <div class="cta-group">
+              <a class="btn btn-primary" href="#system">Explore SmartLibrary</a>
+              <a class="btn btn-secondary" href="#contact">Contact the team</a>
+            </div>
 
-            <ul>
+            <ul class="hero-meta" aria-label="Key library statistics">
+              <li>
+                <strong>1,248</strong>
+                <span>titles tracked</span>
+              </li>
+              <li>
+                <strong>24/7</strong>
+                <span>book access</span>
+              </li>
+              <li>
+                <strong>98%</strong>
+                <span>visibility</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="hero-panel" aria-label="System summary">
+            <div class="panel-card highlight">
+              <span class="panel-label">Overview</span>
+              <h3>Manage books with ease.</h3>
+              <p>
+                Track availability, borrowing, due dates, and student activity
+                from one digital dashboard.
+              </p>
+            </div>
+
+            <div class="panel-card compact">
+              <div>
+                <span class="mini-tag">Status</span>
+                <strong>Available titles: 1,248</strong>
+              </div>
+              <span class="pulse" aria-label="System online"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt-section" id="problem">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">The Problem</p>
+            <h2>Manual library records slow everything down.</h2>
+          </div>
+
+          <div class="content-grid">
+            <div class="text-panel">
+              <p>
+                The school library currently relies on manual record keeping, which
+                makes it difficult to know which books are available, who has
+                borrowed a title, and when it should be returned.
+              </p>
+              <p>
+                This creates delays, misplaced records, and poor visibility for
+                students, librarians, and staff.
+              </p>
+            </div>
+
+            <div class="info-panel">
+              <h3>Who is affected?</h3>
+              <ul class="check-list">
                 <li>Students</li>
                 <li>Librarians</li>
                 <li>Teachers</li>
-                <li>School Administration</li>
-            </ul>
-              </section>
+                <li>School administration</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
 
-                 <!-- ================= SMARTLIBRARY SECTION ================= -->
+      <section class="section" id="system">
+        <div class="container">
+          <div class="section-heading center">
+            <p class="eyebrow">Proposed solution</p>
+            <h2>Our proposed system</h2>
+          </div>
 
-              <section id="system">
-                 <h2>Our Proposed System</h2>
+          <div class="content-grid">
+            <div class="text-panel">
+              <h3>SmartLibrary</h3>
+              <p>
+                SmartLibrary is designed to provide an organized digital way to
+                manage books, borrowing, returning, and book availability.
+              </p>
+            </div>
 
-            <h3>SmartLibrary</h3>
-
-            <p>
-                SmartLibrary is designed to provide an organized digital
-                way to manage books, borrowing, returning, and book
-                availability.
-            </p>
-
-            <h3>Intended Users</h3>
-
-            <ul>
+            <div class="info-panel">
+              <h3>Intended users</h3>
+              <ul class="check-list">
                 <li>Librarians</li>
                 <li>Students</li>
-                <li>Lecture</li>
+                <li>Lecturers</li>
                 <li>Administrators</li>
-            </ul>
-
-              </section>
-
-              <!-- ================= FEATURES SECTION ================= -->
-
-              <section id="feature">
-
-                   <h2>Features & Benefits</h2>
-
-            <!-- Feature 1 -->
-            <div class="feature">
-                <h3>Book Management</h3>
-                <p>
-                    Librarians can add, edit, delete, and search for books.
-                </p>
+              </ul>
             </div>
+          </div>
+        </div>
+      </section>
 
-            <!-- Feature 2 -->
-            <div class="feature">
-                <h3>Borrowing & Returning</h3>
-                <p>
-                    The system records borrowed books, borrowing dates,
-                    and expected return dates.
-                </p>
-            </div>
+      <section class="section alt-section" id="feature">
+        <div class="container">
+          <div class="section-heading center">
+            <p class="eyebrow">Features</p>
+            <h2>Features &amp; benefits</h2>
+          </div>
 
-            <!-- Feature 3 -->
-            <div class="feature">
-                <h3>Book Availability Search</h3>
-                <p>
-                    Students and staff can search for books and see
-                    whether they are available or already borrowed.
-                </p>
-            </div>
+          <div class="feature-grid">
+            <article class="feature-card">
+              <div class="icon">01</div>
+              <h3>Book Management</h3>
+              <p>
+                Librarians can add, edit, delete, and search for books in a
+                centralized system.
+              </p>
+            </article>
 
-        </section>
+            <article class="feature-card">
+              <div class="icon">02</div>
+              <h3>Borrowing &amp; Returning</h3>
+              <p>
+                The system records borrowed books, borrowing dates, and expected
+                return dates automatically.
+              </p>
+            </article>
 
+            <article class="feature-card">
+              <div class="icon">03</div>
+              <h3>Availability Search</h3>
+              <p>
+                Students and staff can quickly check whether a book is available
+                or already borrowed.
+              </p>
+            </article>
 
-        <!-- ================= TEAM SECTION ================= -->
-        <section id="team">
+            <article class="feature-card">
+              <div class="icon">04</div>
+              <h3>Faster Access</h3>
+              <p>
+                Reduce waiting time by creating a more organized, transparent, and
+                reliable library workflow.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
 
-            <h2>Meet Our Team</h2>
+      <section class="section" id="team">
+        <div class="container">
+          <div class="section-heading center">
+            <p class="eyebrow">Team</p>
+            <h2>Meet our team</h2>
+          </div>
 
-            <!-- Team members will be added here -->
+          <div class="team-grid">
+            <article class="team-member">
+              <div class="avatar">CS</div>
+              <h3>Charles Sikazwe</h3>
+              <p class="role">Navigation &amp; Integration</p>
+              <p>Student No: 2510281</p>
+              <a href="#" target="_blank" rel="noreferrer">GitHub</a>
+            </article>
 
-            <div class="team-member">
-                <h3>Charles Sikazwe</h3>
-                <p>Student No: 2510281</p>
-                <p>Navigation & Integration</p>
-                <a href="#" target="_blank">GitHub</a>
-            </div>
+            <article class="team-member">
+              <div class="avatar">TM</div>
+              <h3>Team Member 2</h3>
+              <p class="role">System Design</p>
+              <p>Student No: 2510XXX</p>
+              <a href="#" target="_blank" rel="noreferrer">GitHub</a>
+            </article>
 
-            <!-- Add the remaining members here -->
+            <article class="team-member">
+              <div class="avatar">TM</div>
+              <h3>Team Member 3</h3>
+              <p class="role">UI/UX</p>
+              <p>Student No: 2510XXX</p>
+              <a href="#" target="_blank" rel="noreferrer">GitHub</a>
+            </article>
 
-        </section>
+            <article class="team-member">
+              <div class="avatar">TM</div>
+              <h3>Team Member 4</h3>
+              <p class="role">Database</p>
+              <p>Student No: 2510XXX</p>
+              <a href="#" target="_blank" rel="noreferrer">GitHub</a>
+            </article>
 
+            <article class="team-member">
+              <div class="avatar">TM</div>
+              <h3>Team Member 5</h3>
+              <p class="role">Testing</p>
+              <p>Student No: 2510XXX</p>
+              <a href="#" target="_blank" rel="noreferrer">GitHub</a>
+            </article>
 
-        <!-- ================= CONTACT SECTION ================= -->
-        <section id="contact-info">
+            <article class="team-member">
+              <div class="avatar">TM</div>
+              <h3>Team Member 6</h3>
+              <p class="role">Frontend</p>
+              <p>Student No: 2510XXX</p>
+              <a href="#" target="_blank" rel="noreferrer">GitHub</a>
+            </article>
 
-            <h2>Contact Us</h2>
+            <article class="team-member">
+              <div class="avatar">TM</div>
+              <h3>Team Member 7</h3>
+              <p class="role">Research</p>
+              <p>Student No: 2510XXX</p>
+              <a href="#" target="_blank" rel="noreferrer">GitHub</a>
+            </article>
 
-            <p>
-                Have questions about SmartLibrary? Get in touch with
-                the 5th Generation team.
-            </p>
+            <article class="team-member">
+              <div class="avatar">TM</div>
+              <h3>Team Member 8</h3>
+              <p class="role">Documentation</p>
+              <p>Student No: 2510XXX</p>
+              <a href="#" target="_blank" rel="noreferrer">GitHub</a>
+            </article>
 
-            <a href="mailto:your-email@example.com">
-                Contact the Team
-            </a>
+            <article class="team-member">
+              <div class="avatar">TM</div>
+              <h3>Team Member 9</h3>
+              <p class="role">Quality Assurance</p>
+              <p>Student No: 2510XXX</p>
+              <a href="#" target="_blank" rel="noreferrer">GitHub</a>
+            </article>
 
-        </section>
+            <article class="team-member">
+              <div class="avatar">TM</div>
+              <h3>Team Member 10</h3>
+              <p class="role">Project Support</p>
+              <p>Student No: 2510XXX</p>
+              <a href="#" target="_blank" rel="noreferrer">GitHub</a>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- Contact Section -->
+<section id="contact" class="contact-section">
+    <div class="contact-container">
+        <h2>Contact 5th Generation</h2>
 
+        <p>
+            Have questions about SmartLibrary or our project?
+            Get in touch with our team.
+        </p>
+
+        <a href="mailto:5thgeneration@example.com" class="contact-button">
+            Contact Our Team
+        </a>
+    </div>
+</section>
     </main>
 
-
-    <!-- ================= FOOTER ================= -->
-    <footer>
-
-        <p>
-            &copy; 2026 5th Generation. All Rights Reserved.
-        </p>
-
-        <p>
-            SmartLibrary - School Library Management System
-        </p>
-
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>&copy; 2026 5th Generation. All Rights Reserved.</p>
+        <p>SmartLibrary - School Library Management System</p>
+      </div>
     </footer>
 
-
-    <!-- JavaScript file -->
     <script src="script.js"></script>
-
-              
-
-         </main>
-    </body>
-
+  </body>
 </html>
