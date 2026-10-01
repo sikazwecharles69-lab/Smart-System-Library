@@ -781,3 +781,69 @@ a:focus-visible {
 .contact-button:hover {
     opacity: 0.8;
 }
+.menu-button {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    .menu-button {
+        display: block;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+}
+
+/* Menu button */
+.menu-button {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* Desktop */
+.nav-menu {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .menu-button {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        gap: 0;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-menu a {
+        padding: 15px;
+        display: block;
+    }
+}
