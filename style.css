@@ -781,3 +781,94 @@ a:focus-visible {
 .contact-button:hover {
     opacity: 0.8;
 }
+
+/* FEATURES SECTION */
+.features {
+    padding: 60px 8%;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title h2 {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.section-title p {
+    font-size: 17px;
+}
+
+.feature-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.feature-card {
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    background: #ffffff;
+}
+
+.feature-card h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.feature-card p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.feature-card ul {
+    padding-left: 20px;
+}
+
+.feature-card li {
+    margin-bottom: 8px;
+}
+
+/* BENEFITS */
+.benefits {
+    margin-top: 50px;
+    padding: 30px;
+    border-radius: 10px;
+    background: #f5f5f5;
+}
+
+.benefits h2 {
+    margin-bottom: 20px;
+}
+
+.benefits ul {
+    padding-left: 20px;
+}
+
+.benefits li {
+    margin-bottom: 10px;
+}
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 900px) {
+    .feature-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .features {
+        padding: 40px 5%;
+    }
+
+    .section-title h2 {
+        font-size: 28px;
+    }
+
+    .feature-card h3 {
+        font-size: 20px;
+    }
+}
