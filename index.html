@@ -7,22 +7,33 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <header>
-    <div class="logo">
-        <h2>SmartLibrary</h2>
-    </div>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="#home" aria-label="SmartLibrary home">
+          <span class="logo-mark">SL</span>
+          <h1>SmartLibrary</h1>
+        </a>
 
-    <button class="menu-button">☰</button>
+        <button class="menu-button" type="button" aria-label="Toggle navigation" aria-expanded="false">
+          
+        </button>
 
-    <nav class="nav-menu">
-        <a href="#home">Home</a>
-        <a href="#problem">Problem</a>
-        <a href="#smartlibrary">SmartLibrary</a>
-        <a href="#features">Features</a>
-        <a href="#team">Team</a>
-        <a href="#contact">Contact</a>
-    </nav>
-</header>
+        <nav class="main-nav nav-menu" aria-label="Main navigation">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#problem">Problem</a></li>
+            <li><a href="#system">SmartLibrary</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+          <span class="theme-icon" aria-hidden="true">🌙</span>
+        </button>
+      </div>
+    </header>
 
     <main>
       <section class="hero" id="home">
@@ -220,84 +231,29 @@
 
           <div class="team-grid">
             <article class="team-member">
-              <div class="avatar">CS</div>
+              <img class="avatar" src="images/member1.jpeg" alt="Charles Sikazwe">
               <h3>Charles Sikazwe</h3>
               <p class="role">Navigation &amp; Integration</p>
               <p>Student No: 2510281</p>
-              <a href="#" target="_blank" rel="noreferrer">GitHub</a>
+              <a href="https://github.com/sikazwecharles69-lab" target="_blank" rel="noreferrer">GitHub Account</a>
             </article>
 
             <article class="team-member">
-              <div class="avatar">TM</div>
-              <h3>Team Member 2</h3>
-              <p class="role">System Design</p>
-              <p>Student No: 2510XXX</p>
-              <a href="#" target="_blank" rel="noreferrer">GitHub</a>
+              <img class="avatar" src="images/profile.jpeg" alt="Paul Mwale">
+              <h3>Paul Mwale</h3>
+              <p class="role">Main website styling</p>
+              <p>Student No: 2511005</p>
+              <a href="https://github.com/PAULMWALE47" target="_blank" rel="noreferrer">GitHub Account</a>
             </article>
 
             <article class="team-member">
-              <div class="avatar">TM</div>
-              <h3>Team Member 3</h3>
-              <p class="role">UI/UX</p>
-              <p>Student No: 2510XXX</p>
-              <a href="#" target="_blank" rel="noreferrer">GitHub</a>
+             <img class="avatar" src="images/profile2.jpeg" alt="Paul Mwale">
+              <h3>Kaluba Chibesakunda </h3>
+              <p class="role">heading,introduction & description</p>
+              <p>Student No: 2510108</p>
+              <a href="https://github.com/K4LUB4" target="_blank" rel="noreferrer">GitHub Account</a>
             </article>
 
-            <article class="team-member">
-              <div class="avatar">TM</div>
-              <h3>Team Member 4</h3>
-              <p class="role">Database</p>
-              <p>Student No: 2510XXX</p>
-              <a href="#" target="_blank" rel="noreferrer">GitHub</a>
-            </article>
-
-            <article class="team-member">
-              <div class="avatar">TM</div>
-              <h3>Team Member 5</h3>
-              <p class="role">Testing</p>
-              <p>Student No: 2510XXX</p>
-              <a href="#" target="_blank" rel="noreferrer">GitHub</a>
-            </article>
-
-            <article class="team-member">
-              <div class="avatar">TM</div>
-              <h3>Team Member 6</h3>
-              <p class="role">Frontend</p>
-              <p>Student No: 2510XXX</p>
-              <a href="#" target="_blank" rel="noreferrer">GitHub</a>
-            </article>
-
-            <article class="team-member">
-              <div class="avatar">TM</div>
-              <h3>Team Member 7</h3>
-              <p class="role">Research</p>
-              <p>Student No: 2510XXX</p>
-              <a href="#" target="_blank" rel="noreferrer">GitHub</a>
-            </article>
-
-            <article class="team-member">
-              <div class="avatar">TM</div>
-              <h3>Team Member 8</h3>
-              <p class="role">Documentation</p>
-              <p>Student No: 2510XXX</p>
-              <a href="#" target="_blank" rel="noreferrer">GitHub</a>
-            </article>
-
-            <article class="team-member">
-              <div class="avatar">TM</div>
-              <h3>Team Member 9</h3>
-              <p class="role">Quality Assurance</p>
-              <p>Student No: 2510XXX</p>
-              <a href="#" target="_blank" rel="noreferrer">GitHub</a>
-            </article>
-
-            <article class="team-member">
-              <div class="avatar">TM</div>
-              <h3>Team Member 10</h3>
-              <p class="role">Project Support</p>
-              <p>Student No: 2510XXX</p>
-              <a href="#" target="_blank" rel="noreferrer">GitHub</a>
-            </article>
           </div>
         </div>
       </section>
