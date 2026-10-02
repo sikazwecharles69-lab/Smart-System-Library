@@ -9,21 +9,29 @@
   <body>
     <header class="site-header">
       <div class="container header-inner">
-        <a class="logo" href="#home" aria-label="Smart Library home">
+        <a class="logo" href="#home" aria-label="SmartLibrary home">
           <span class="logo-mark">SL</span>
-          <h1>Smart Library</h1>
+          <h1>SmartLibrary</h1>
         </a>
 
-        <nav class="main-nav" aria-label="Main navigation">
+        <button class="menu-button" type="button" aria-label="Toggle navigation" aria-expanded="false">
+          
+        </button>
+
+        <nav class="main-nav nav-menu" aria-label="Main navigation">
           <ul>
-            <li><a href="#Home">Home</a></li>
-            <li><a href="#Problem">Problem</a></li>
-            <li><a href="#System">SmartLibrary</a></li>
-            <li><a href="#Feature">Feature</a></li>
-            <li><a href="#Team">Team</a></li>
-            <li><a href="#Contact">Contact</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#problem">Problem</a></li>
+            <li><a href="#system">SmartLibrary</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
+
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+          <span class="theme-icon" aria-hidden="true">🌙</span>
+        </button>
       </div>
     </header>
 
@@ -143,52 +151,76 @@
         </div>
       </section>
 
-      <section class="section alt-section" id="feature">
-        <div class="container">
-          <div class="section-heading center">
-            <p class="eyebrow">Features</p>
-            <h2>Features &amp; benefits</h2>
-          </div>
+      <!-- FEATURES SECTION -->
+<section id="features" class="features">
+    <div class="section-title">
+        <h2>SmartLibrary Features</h2>
+        <p>Key features that make managing and using the school library easier.</p>
+    </div>
 
-          <div class="feature-grid">
-            <article class="feature-card">
-              <div class="icon">01</div>
-              <h3>Book Management</h3>
-              <p>
-                Librarians can add, edit, delete, and search for books in a
-                centralized system.
-              </p>
-            </article>
+    <div class="feature-container">
 
-            <article class="feature-card">
-              <div class="icon">02</div>
-              <h3>Borrowing &amp; Returning</h3>
-              <p>
-                The system records borrowed books, borrowing dates, and expected
-                return dates automatically.
-              </p>
-            </article>
+        <!-- Feature 1 -->
+        <div class="feature-card">
+            <h3>Feature 1 – Book Management</h3>
+            <p>
+                The librarian can manage the library's books through a simple
+                and organized system.
+            </p>
 
-            <article class="feature-card">
-              <div class="icon">03</div>
-              <h3>Availability Search</h3>
-              <p>
-                Students and staff can quickly check whether a book is available
-                or already borrowed.
-              </p>
-            </article>
-
-            <article class="feature-card">
-              <div class="icon">04</div>
-              <h3>Faster Access</h3>
-              <p>
-                Reduce waiting time by creating a more organized, transparent, and
-                reliable library workflow.
-              </p>
-            </article>
-          </div>
+            <ul>
+                <li>Add new books</li>
+                <li>Edit existing book information</li>
+                <li>Delete books</li>
+                <li>Search for books</li>
+            </ul>
         </div>
-      </section>
+
+        <!-- Feature 2 -->
+        <div class="feature-card">
+            <h3>Feature 2 – Borrowing and Returning</h3>
+            <p>
+                The system keeps accurate records of books borrowed and
+                returned by students and other users.
+            </p>
+
+            <ul>
+                <li>Student/user who borrowed the book</li>
+                <li>Borrowing date</li>
+                <li>Expected return date</li>
+                <li>Return information</li>
+            </ul>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="feature-card">
+            <h3>Feature 3 – Book Availability Search</h3>
+            <p>
+                Users can search for a book and quickly check its current
+                availability.
+            </p>
+
+            <ul>
+                <li>Available</li>
+                <li>Already borrowed</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- BENEFITS -->
+    <div class="benefits">
+        <h2>Benefits of SmartLibrary</h2>
+
+        <ul>
+            <li>Saves time</li>
+            <li>Reduces errors</li>
+            <li>Makes books easier to track</li>
+            <li>Makes availability easier to check</li>
+            <li>Reduces dependence on paper records</li>
+        </ul>
+    </div>
+</section>
 
       <section class="section" id="team">
         <div class="container">
@@ -199,84 +231,29 @@
 
           <div class="team-grid">
             <article class="team-member">
-              <div class="avatar">CS</div>
+              <img class="avatar" src="images/member1.jpeg" alt="Charles Sikazwe">
               <h3>Charles Sikazwe</h3>
               <p class="role">Navigation &amp; Integration</p>
               <p>Student No: 2510281</p>
-              <a href="#" target="_blank" rel="noreferrer">GitHub</a>
+              <a href="https://github.com/sikazwecharles69-lab" target="_blank" rel="noreferrer">GitHub Account</a>
             </article>
 
             <article class="team-member">
-              <div class="avatar">TM</div>
-              <h3>Team Member 2</h3>
-              <p class="role">System Design</p>
-              <p>Student No: 2510XXX</p>
-              <a href="#" target="_blank" rel="noreferrer">GitHub</a>
+              <img class="avatar" src="images/profile.jpeg" alt="Paul Mwale">
+              <h3>Paul Mwale</h3>
+              <p class="role">Main website styling</p>
+              <p>Student No: 2511005</p>
+              <a href="https://github.com/PAULMWALE47" target="_blank" rel="noreferrer">GitHub Account</a>
             </article>
 
             <article class="team-member">
-              <div class="avatar">TM</div>
-              <h3>Team Member 3</h3>
-              <p class="role">UI/UX</p>
-              <p>Student No: 2510XXX</p>
-              <a href="#" target="_blank" rel="noreferrer">GitHub</a>
+             <img class="avatar" src="images/profile2.jpeg" alt="Paul Mwale">
+              <h3>Kaluba Chibesakunda </h3>
+              <p class="role">heading,introduction & description</p>
+              <p>Student No: 2510108</p>
+              <a href="https://github.com/K4LUB4" target="_blank" rel="noreferrer">GitHub Account</a>
             </article>
 
-            <article class="team-member">
-              <div class="avatar">TM</div>
-              <h3>Team Member 4</h3>
-              <p class="role">Database</p>
-              <p>Student No: 2510XXX</p>
-              <a href="#" target="_blank" rel="noreferrer">GitHub</a>
-            </article>
-
-            <article class="team-member">
-              <div class="avatar">TM</div>
-              <h3>Team Member 5</h3>
-              <p class="role">Testing</p>
-              <p>Student No: 2510XXX</p>
-              <a href="#" target="_blank" rel="noreferrer">GitHub</a>
-            </article>
-
-            <article class="team-member">
-              <div class="avatar">TM</div>
-              <h3>Team Member 6</h3>
-              <p class="role">Frontend</p>
-              <p>Student No: 2510XXX</p>
-              <a href="#" target="_blank" rel="noreferrer">GitHub</a>
-            </article>
-
-            <article class="team-member">
-              <div class="avatar">TM</div>
-              <h3>Team Member 7</h3>
-              <p class="role">Research</p>
-              <p>Student No: 2510XXX</p>
-              <a href="#" target="_blank" rel="noreferrer">GitHub</a>
-            </article>
-
-            <article class="team-member">
-              <div class="avatar">TM</div>
-              <h3>Team Member 8</h3>
-              <p class="role">Documentation</p>
-              <p>Student No: 2510XXX</p>
-              <a href="#" target="_blank" rel="noreferrer">GitHub</a>
-            </article>
-
-            <article class="team-member">
-              <div class="avatar">TM</div>
-              <h3>Team Member 9</h3>
-              <p class="role">Quality Assurance</p>
-              <p>Student No: 2510XXX</p>
-              <a href="#" target="_blank" rel="noreferrer">GitHub</a>
-            </article>
-
-            <article class="team-member">
-              <div class="avatar">TM</div>
-              <h3>Team Member 10</h3>
-              <p class="role">Project Support</p>
-              <p>Student No: 2510XXX</p>
-              <a href="#" target="_blank" rel="noreferrer">GitHub</a>
-            </article>
           </div>
         </div>
       </section>
@@ -290,7 +267,7 @@
             Get in touch with our team.
         </p>
 
-        <a href="mailto:5thgeneration@example.com" class="contact-button">
+        <a href="mailto:5thgeneration@SmartLibrary.com" class="contact-button">
             Contact Our Team
         </a>
     </div>
