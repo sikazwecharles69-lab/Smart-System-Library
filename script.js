@@ -1,36 +1,27 @@
-// Mobile Menu
+// Mobile menu
 const menuButton = document.querySelector(".menu-button");
 const navMenu = document.querySelector(".nav-menu");
 
 if (menuButton && navMenu) {
-    menuButton.addEventListener("click", () => {
-        navMenu.classList.toggle("active");
-    });
-}
+  menuButton.setAttribute("aria-expanded", "false");
 
-// Close mobile menu when a navigation link is clicked
-const navLinks = document.querySelectorAll(".nav-menu a");
+  menuButton.addEventListener("click", () => {
+    const isOpen = navMenu.classList.toggle("active");
+    menuButton.setAttribute("aria-expanded", isOpen);
+  });
 
-navLinks.forEach(link => {
+  navMenu.querySelectorAll("a").forEach(link => {
     link.addEventListener("click", () => {
-        navMenu.classList.remove("active");
+      navMenu.classList.remove("active");
+      menuButton.setAttribute("aria-expanded", "false");
     });
-});
+  });
 
-// Learn More Button
-const learnMoreButton = document.querySelector("#learn-more");
-
-if (learnMoreButton) {
-    learnMoreButton.addEventListener("click", () => {
-        document.querySelector("#features").scrollIntoView({
-            behavior: "smooth"
-        });
-    });
+  document.addEventListener("keydown", e => {
+    if (e.key === "Escape") {
+      navMenu.classList.remove("active");
+      menuButton.setAttribute("aria-expanded", "false");
+    }
+  });
 }
-const menuButton = document.querySelector(".menu-button");
-const navMenu = document.querySelector(".nav-menu");
-
-menuButton.addEventListener("click", () => {
-    navMenu.classList.toggle("active");
-});
 

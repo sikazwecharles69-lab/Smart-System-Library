@@ -872,3 +872,23 @@ a:focus-visible {
         font-size: 20px;
     }
 }
+
+/* SSL-13: mobile menu */
+.menu-button {
+  display: none;
+  background: none;
+  color: inherit;
+  border: 1px solid currentColor;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+html { scroll-behavior: smooth; }
+
+@media (max-width: 768px) {
+  .menu-button { display: block; }
+  .nav-menu { display: none; flex-direction: column; }
+  .nav-menu.active { display: flex; }
+}
